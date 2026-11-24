@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbal Hair Care | ร้านยาสระผม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Herbal Hair Care</h1>
+    <p>ดูแลเส้นผมด้วยผลิตภัณฑ์ที่คุณเลือกได้</p>
+  </header>
+
+  <nav>
+    <a href="#home">หน้าแรก</a>
+    <a href="#products">สินค้า</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>สุขภาพผมดี เริ่มต้นที่การดูแล</h2>
+    <p>เลือกผลิตภัณฑ์ดูแลเส้นผมที่เหมาะกับคุณ</p>
+    <a href="#products" class="btn">เลือกซื้อสินค้า</a>
+  </section>
+
+  <main id="products">
+    <h2>สินค้าของเรา</h2>
+    <div class="products">
+
+      <div class="product-card">
+        <img src="images/SKU001.jpg" alt="ยาสระผมสมุนไพร">
+        <h3>ยาสระผมสมุนไพร</h3>
+        <p>SKU: SKU001</p>
+        <p>สูตรธรรมชาติ</p>
+        <strong>159 บาท</strong>
+        <button onclick="addToCart('SKU001', 'ยาสระผมสมุนไพร', 159)">
+          เพิ่มลงตะกร้า
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/SKU002.jpg" alt="ยาสระผมลดผมร่วง">
+        <h3>ยาสระผมลดผมร่วง</h3>
+        <p>SKU: SKU002</p>
+        <p>สูตรลดผมร่วง</p>
+        <strong>199 บาท</strong>
+        <button onclick="addToCart('SKU002', 'ยาสระผมลดผมร่วง', 199)">
+          เพิ่มลงตะกร้า
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="cart">
+    <h2>🛒 ตะกร้าสินค้า</h2>
+    <div id="cartItems">ยังไม่มีสินค้า</div>
+    <h3>ยอดรวม: <span id="total">0</span> บาท</h3>
+    <button onclick="checkout()">สั่งซื้อสินค้า</button>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>Herbal Hair Care</p>
+    <p>ร้านค้าออนไลน์เพื่อสุขภาพเส้นผม</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Herbal Hair Care</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
